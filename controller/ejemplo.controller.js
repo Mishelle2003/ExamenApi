@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 import Ejemplo from "../model/ejemplos.model.js";
 
 export const getAllEjemplo = async (req, res) => {
-    console.log('obtiene todos los ejemplos')
+    console.log('obtiene todos los ejemplos ')
     try {
         const ejemplos = await Ejemplo.find({}, { __v: 0 })
         if (ejemplos.length === 0) {
